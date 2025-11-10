@@ -24,23 +24,22 @@ public class Humain {
 	}
 
 	public void direBonjour() {
-		System.out.println("Bonjour ! Je m'apelle " + nom + " et j'aime boire du " + boisson_fav+".");
+		parler("Bonjour ! Je m'apelle " + nom + " et j'aime boire du " + boisson_fav+".");
 
 	}
 
 	public void boire() {
-		System.out.println("Mmmm, un bon verre de " + boisson_fav + " ! GLOUPS !");
+		parler("Mmmm, un bon verre de " + boisson_fav + " ! GLOUPS !");
 	}
 
 	public void acheter(String bien, int prix) {
 		if (getQuantite_argent() >= prix) {
 		
-			System.out.println("J'ai " + quantite_argent + " sous en poche. Je vais pouvoir m'offrir " + bien + " à "
+			parler("J'ai " + quantite_argent + " sous en poche. Je vais pouvoir m'offrir " + bien + " à "
 					+ prix + " sous.");
 			perdreArgent(prix);
 		} else {
-			System.out.println("Je n'ai plus que " + quantite_argent + " sous en poche. Je ne peux même pas m'offrir "
-					+ bien + " à " + prix + " sous.");
+			parler("Je n'ai plus que " + quantite_argent + " sous en poche. Je ne peux même pas m'offrir "+ bien + " à " + prix + " sous.");
 		}
 
 	}
@@ -59,7 +58,7 @@ public class Humain {
 	}
 
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "\"" + texte + "\"");
+		System.out.println(prendreParole()  + texte );
 	}
 
 }
