@@ -19,8 +19,11 @@ public class HistoireTP4 {
 		
 		Yakuza yakulenoir= new Yakuza("Yaku le noir","whisky",30,"Warsong");
 		yakulenoir.direBonjour();
-		
 		yakulenoir.extorquer(marco);
+		
+		Ronin roro= new Ronin("Roro","shochu",60);
+		roro.direBonjour();
+		roro.donner(marco);
 		
 	}
 
