@@ -4,6 +4,7 @@ public class Humain {
 	private String nom;
 	private String boisson_fav;
 	private int quantite_argent;
+	protected int nbConnaissance;
 
 	public Humain(String nom, String boisson_fav, int quantite_argent) {
 		this.nom= nom;
